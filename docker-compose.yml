@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  friendsapp:
+    image: ${DOCKER_REGISTRY-}friendsapp
+    build:
+      context: .
+      dockerfile: FriendsApp/Dockerfile
